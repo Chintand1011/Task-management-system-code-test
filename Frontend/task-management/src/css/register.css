@@ -1,0 +1,111 @@
+/* Full page container */
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0f2fe, #f0fdfa);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Card container */
+.register-card {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.register-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+.register-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Input fields */
+.register-card input,
+.register-card select {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.register-card input:focus,
+.register-card select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Error & success messages */
+.register-card .error-message,
+.register-card .success-message {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.register-card .error-message {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.register-card .success-message {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+/* Submit button */
+.register-card button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.register-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer text */
+.register-card p {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.register-card a {
+  color: #3b82f6;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.register-card a:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}

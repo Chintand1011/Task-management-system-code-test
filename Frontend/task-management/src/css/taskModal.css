@@ -1,0 +1,121 @@
+/* Overlay */
+.task-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal container */
+.task-modal-container {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease-in-out;
+}
+
+/* Heading */
+.task-modal-container h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Form inputs */
+.task-modal-container input,
+.task-modal-container textarea,
+.task-modal-container select {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+  font-family: inherit;
+}
+
+.task-modal-container input:focus,
+.task-modal-container textarea:focus,
+.task-modal-container select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Textarea */
+.task-modal-container textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Buttons */
+.task-modal-container button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+.task-modal-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Cancel button */
+.task-modal-container button[type="button"] {
+  background-color: #f3f4f6;
+  color: #111827;
+  border: 1px solid #d1d5db;
+}
+
+/* Add / Update button */
+.task-modal-container button[type="submit"] {
+  color: #fff;
+}
+
+.task-modal-container button[type="submit"].add {
+  background: linear-gradient(to right, #10b981, #059669);
+}
+
+.task-modal-container button[type="submit"].update {
+  background: linear-gradient(to right, #fbbf24, #f59e0b);
+}
+
+.task-modal-container button.add:hover {
+  background: linear-gradient(to right, #059669, #10b981);
+}
+
+.task-modal-container button.update:hover {
+  background: linear-gradient(to right, #f59e0b, #fbbf24);
+}
+
+/* Button container */
+.task-modal-container .button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(20px);}
+  to {transform: translateY(0);}
+}
